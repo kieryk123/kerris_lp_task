@@ -1,0 +1,12 @@
+.header {
+    background: white;
+
+	&__inner {
+        @include container;
+        padding: 16px;
+	}
+
+	&__logo {
+
+	}
+}
