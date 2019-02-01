@@ -1,0 +1,14 @@
+// grid
+$gutter: 16px;
+
+$container-lg-width: 1152px;
+$container-md-width: 960px;
+$container-sm-width: 768px;
+$container-xs-width: 100%;
+
+$breakpoint-lg: $container-lg-width - 1;
+$breakpoint-md: $container-md-width - 1;
+$breakpoint-sm: $container-sm-width - 1;
+$breakpoint-xs: 479px;
+
+//colors
