@@ -1,0 +1,14 @@
+.section-heading {
+    display: block;
+    width: 100%;
+
+	&__title {
+        font-family: Poppins-SemiBold;
+        font-size: 60px;
+        color: #231F20;
+        letter-spacing: 0;
+        line-height: 83px;
+        margin-top: 0;
+        margin-bottom: 0;
+	}
+}

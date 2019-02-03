@@ -1,0 +1,19 @@
+.footer {
+
+	&__inner {
+        @include container;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 42px;
+        padding-bottom: 42px;
+	}
+
+	&__author-info {
+        font-family: Poppins-Regular;
+        font-weight: 500;
+        font-size: 14px;
+        color: #7E7E7E;
+        letter-spacing: 0;
+        text-align: left;
+	}
+}

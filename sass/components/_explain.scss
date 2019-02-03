@@ -1,0 +1,20 @@
+.explain {
+
+	&__inner {
+        @include container;
+        padding-top: 46px;
+        padding-bottom: 28px;
+	}
+
+	&__heading-col {
+        @include column(12/12);
+	}
+
+	&__left-col {
+        @include column(6/12);
+	}
+
+	&__right-col {
+        @include column(6/12);
+	}
+}

@@ -1,5 +1,5 @@
 .hero {
-    background: rgba(255,198,37,1);
+    background: $color-primary;
 
 	&__inner {
         @include container;
@@ -18,13 +18,14 @@
 
     &__image {
         position: absolute;
-        top: -98px;
+        top: -169px;
         left: 0;
     }
 
 	&__title {
         position: relative;
         font-family: Poppins-Regular;
+        font-weight: 400;
         font-size: 60px;
         color: #000000;
         letter-spacing: 0;

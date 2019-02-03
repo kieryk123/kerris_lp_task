@@ -4,6 +4,8 @@
 
 main {
     overflow: hidden;
+    padding-top: 71px;
+    margin-top: -71px;
 }
 
 // assets
@@ -17,3 +19,8 @@ main {
 @import "components/_header";
 @import "components/_hero";
 @import "components/_btn";
+@import "components/_section-heading";
+@import "components/_explain";
+@import "components/_explain-box";
+@import "components/_dot";
+@import "components/_footer";
