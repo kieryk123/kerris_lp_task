@@ -102,7 +102,7 @@ module.exports = {
       // browse to http://localhost:3000/ during development,
       // curent directory is being served
       host: 'localhost',
-      port: 3030,
+      port: 3333,
       server: { baseDir: ['./'] },
       // add files to watch for changes
       files: './*.html',

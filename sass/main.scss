@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+main {
+    overflow: hidden;
+}
+
 // assets
 @import "assets/_normalize";
 @import "assets/_fonts";
@@ -11,3 +15,5 @@
 
 // components
 @import "components/_header";
+@import "components/_hero";
+@import "components/_btn";

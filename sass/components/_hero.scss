@@ -1,0 +1,91 @@
+.hero {
+    background: rgba(255,198,37,1);
+
+	&__inner {
+        @include container;
+        padding-top: 98px;
+        padding-bottom: 81px;
+	}
+
+	&__text-col {
+        @include column(6/12);
+	}
+
+    &__image-col {
+        @include column(6/12);
+        position: relative;
+    }
+
+    &__image {
+        position: absolute;
+        top: -98px;
+        left: 0;
+    }
+
+	&__title {
+        position: relative;
+        font-family: Poppins-Regular;
+        font-size: 60px;
+        color: #000000;
+        letter-spacing: 0;
+        line-height: 83px;
+        margin-bottom: 46px;
+        margin-top: 0;
+
+        &:before {
+            @include ps;
+            z-index: 1;
+            top: calc(50% - 13px/2);
+            left: calc(50% + 257px);
+            width: 119px;
+            height: 13px;
+            background-image: url('../images/lines.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+	}
+
+	&__description {
+        position: relative;
+        font-family: Poppins-Regular;
+        font-size: 14px;
+        color: #090000;
+        letter-spacing: 0;
+        text-align: left;
+        line-height: 25px;
+        margin-top: 0;
+        margin-bottom: 92px;
+
+        &:before {
+            @include ps;
+            z-index: 1;
+            bottom: -58px;
+            right: -90px;
+            width: 147px;
+            height: 26px;
+            background-image: url('../images/ovals.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+	}
+
+    &__btn {
+        position: relative;
+
+        &:before {
+            @include ps;
+            z-index: 1;
+            top: calc(50% + 19px);
+            left: 50px;
+            height: 19px;
+            width: 53px;
+            background-image: url('../images/arrow.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            transform: rotate(90deg);
+        }
+    }
+}
