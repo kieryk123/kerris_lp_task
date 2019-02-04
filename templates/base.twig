@@ -1,0 +1,22 @@
+{% block html_head_container %}
+	{% include 'html-header.twig' %}
+	{% block head %}
+	{% endblock %}
+	</head>
+{% endblock %}
+
+	<body class="{{ body_class }}">
+		{% block header %}
+			{% include 'header.twig' %}
+		{% endblock %}
+
+		<main>
+			{% block main %}
+			{% endblock %}
+		</main>
+
+		{% block footer %}
+			{% include 'footer.twig' %}
+		{% endblock %}
+	</body>
+</html>

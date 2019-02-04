@@ -1,0 +1,49 @@
+{% extends "base.twig" %}
+
+{% block main %}
+	<section class="hero">
+		<div class="hero__inner">
+			<div class="hero__text-col">
+				<h1 class="hero__title">{{ post.meta('hero_title') }}</h1>
+				<p class="hero__description">{{ post.meta('hero_description') }}</p>
+				<a href="{{ post.meta('hero_button_url') }}" class="btn hero__btn">{{ post.meta('hero_button_text') }}</a>
+			</div>
+			<div class="hero__image-col">
+				<img class="hero__image" src="{{ post.meta('hero_image') }}" alt="">
+			</div>
+		</div>
+	</section>
+
+	<section class="explain">
+		<div class="explain__inner">
+			<div class="explain__heading-col">
+				<div class="section-heading">
+					<h2 class="section-heading__title">{{ post.meta('explain_title') }}</h2>
+				</div>
+				<div class="dot"></div>
+			</div>
+			<div class="explain__left-col">
+				<div class="explain-box">
+					<div class="explain-box__icon-wrapper">
+						<img src="{{ post.meta('explain_column_1').column_icon }}" alt="" class="explain-box__icon">
+					</div>
+					<div class="explain-box__content-wrapper">
+						<h3 class="explain-box__title explain-box__title--primary">{{ post.meta('explain_column_1').column_title }}</h3>
+						<p class="explain-box__description">{{ post.meta('explain_column_1').column_description }}</p>
+					</div>
+				</div>
+			</div>
+			<div class="explain__right-col">
+				<div class="explain-box">
+					<div class="explain-box__icon-wrapper">
+						<img src="{{ post.meta('explain_column_2').column_icon }}" alt="" class="explain-box__icon">
+					</div>
+					<div class="explain-box__content-wrapper">
+						<h3 class="explain-box__title explain-box__title--primary">{{ post.meta('explain_column_2').column_title }}</h3>
+						<p class="explain-box__description">{{ post.meta('explain_column_2').column_description }}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+{% endblock %}

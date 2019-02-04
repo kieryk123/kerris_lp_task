@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html {{ site.language_attributes }}>
+<head>
+    <meta charset="{{ site.charset }}">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ site.description }}">
+    <meta name="keywords" content="PROJECT_KEYWORDS">
+    <meta name="author" content="Paweł Kieryk - FIREART.pl">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="{{ site.title }}">
+    <meta property="og:site_name" content="{{ site.title }}">
+    <meta property="og:description" content="{{ site.description }}">
+    <!-- <meta property="og:image" content="http://euro-travel-example.com/thumbnail.jpg">
+    <meta property="og:url" content="http://euro-travel-example.com/index.htm"> -->
+    <title>{{ site.title }}</title>
+
+    <!-- main site styles -->
+    <!-- <link rel="stylesheet" href="dist/css/main.min.css"> -->
+
+    {{ function('wp_head') }}
+
+    {% block head %}
+	{% endblock %}
